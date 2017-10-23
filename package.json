@@ -1,0 +1,19 @@
+{
+  "name": "ticker",
+  "version": "1.0.0",
+  "description": "\"Search for a ticker\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishnasannidhi/ticker.git"
+  },
+  "author": "\"Krishna Sannidhi\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krishnasannidhi/ticker/issues"
+  },
+  "homepage": "https://github.com/krishnasannidhi/ticker#readme"
+}

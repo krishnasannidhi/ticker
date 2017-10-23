@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/krishnasannidhi/ticker/issues"
   },
-  "homepage": "https://github.com/krishnasannidhi/ticker#readme"
+  "homepage": "https://github.com/krishnasannidhi/ticker#readme",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "webpack": "^3.8.1"
+  }
 }

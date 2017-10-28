@@ -18,5 +18,14 @@ module.exports=
       new webpack.DefinePlugin({
         'process.env.PORT':JSON.stringify(process.env.PORT)
       })
-    ]
+    ],
+    module:{
+      rules:[
+        {
+          use: 'babel-loader',
+          test:/\.js$/,
+          exclude:'/node_modules/'
+        }
+      ]
+    }
   }

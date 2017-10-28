@@ -13,6 +13,13 @@ module.exports=
       path:   path.resolve(__dirname,'dist'),
       filename:'[name].js'
     },
+    watch:true,
+    watchOptions:{
+      aggregateTimeout:5000, //auto build will run after 5 secs of last save.
+      ignored:/node_modules/,
+      //poll:10000
+
+    },
     plugins:[
       new HtmlWebpackPlugin({template: './src/index.html'}),
       new webpack.DefinePlugin({

@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 
 const TickerApp=()=>{
   return (
-    <h1>Welcome to Ticker Application</h1>
+    <h2>Welcome to Ticker Application</h2>
   )
 }
 

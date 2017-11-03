@@ -6,6 +6,11 @@ const HtmlWebpackPlugin=require('html-webpack-plugin')
 
 module.exports=
   {
+    resolve:{
+      extensions:['.js','.jsx'],
+    //  moduleDirectories:['node_modules']
+    },
+    devtool:'inline-source-map',
     entry:{
       bundle:'./src/index.js'
     },
@@ -31,6 +36,11 @@ module.exports=
         {
           use: 'babel-loader',
           test:/\.js$/,
+          exclude:'/node_modules/'
+        },
+        {
+          use: 'babel-loader',
+          test:/\.jsx$/,
           exclude:'/node_modules/'
         }
       ]

@@ -1,11 +1,8 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import {render} from 'react-dom'
+import configureStore from './store/configureStore'
+import {Provider} from 'react-redux'
+import HomeContainer from './containers/HomeContainer'
 
-
-const TickerApp=()=>{
-  return (
-    <h2>Welcome to Ticker Application</h2>
-  )
-}
-
-ReactDOM.render(<TickerApp/>,document.getElementById('ticker-container'))
+const store=configureStore()
+render(<Provider store={store}><HomeContainer/></Provider>,document.getElementById('ticker-container'))

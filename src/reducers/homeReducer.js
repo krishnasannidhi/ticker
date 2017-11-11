@@ -1,5 +1,5 @@
 const initialState={
-  welcomeTxt:'Default text'
+  welcomeTxt:'Default Welcome Message'
 }
 
 export default (state=initialState,action)=>{
